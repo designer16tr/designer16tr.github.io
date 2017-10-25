@@ -88,6 +88,8 @@
 				cursor: pointer;
 			} 
 			
+			.pad05 { padding: 5px; }
+			
 			/* Add Animation */
 			@-webkit-keyframes animatetop {
 				from {top: -300px; opacity: 0}
@@ -155,9 +157,22 @@
         <div class="col-md-12">
           <h2>Novice Low</h2>
 			 <!-- Trigger/Open The Modal -->
-			<button id="myBtn01" class="btn btn-default">Turkish Vowels - Reading</button>
-			<button id="myBtn02" class="btn btn-default">Turkish Vowels - Listening</button>
+			 <div class="pad05 bg-info">
+				<h4>Front Vowels: E, e , İ, i , Ö, ö , Ü, ü Back Vowels: A, a , I, ı , O, o , U, u<h4>
+				<button id="myBtn01" class="btn btn-danger">__Turkish Vowels - Reading__</button>
+				<button id="myBtn02" class="btn btn-danger">__Turkish Vowels - Listening__</button>
+				<button id="myBtn03" class="btn btn-info">__Turkish Vowels - Writing__</button>
+				<button id="myBtn04" class="btn btn-warning">__Turkish Vowels - Speaking__</button>
+				<button id="myBtn05" class="btn btn-default">__Turkish Vowels - Feedback__</button>
+			</div>
 			
+			 <div class="pad05 bg-warning">
+				<button id="myBtn01" class="btn btn-primary">Turkish Consonants - Reading</button>
+				<button id="myBtn02" class="btn btn-success">Turkish Consonants - Listening</button>
+				<button id="myBtn03" class="btn btn-info">Turkish Consonants - Writing</button>
+				<button id="myBtn04" class="btn btn-warning">Turkish Consonants - Speaking</button>
+				<button id="myBtn05" class="btn btn-default">Turkish Consonants - Feedback</button>
+			</div>			
 			<!-- Turkish Vowels - Reading -->
 			<div id="myModal_1" class="modal">
 
@@ -168,7 +183,7 @@
 					<h2>Mini Lesson: <mark>Turkish Vowels</mark> - Reading </h2>
 				  </div>
 				  <div class="modal-body">
-					<p>Some other text... </br></p>
+					<p><mark>Front Vowels:</mark> produced closer to your teeth, in the “front” of your mouth </br></p>
 					<p>Some other text... </br></p>
 					<p>Some other text... </br></p>
 					<p>Some other text... </br></p>		
@@ -178,7 +193,7 @@
 					<p>Some other text... </br></p>					
 				  </div>
 				  <div class="modal-footer">
-					<h3>Also try this: ...</h3>
+					<h4>See mini lesson <b><mark>Vowel Harmony</mark></b> for importance of Front versus Back vowels distinction</h4>
 				  </div>			  
 			  
 			  </div>			 			  
@@ -202,7 +217,7 @@
 				
 				  </div>
 				  <div class="modal-footer">
-					<h3>Also try this: ...</h3>
+					<h4>See mini lesson <b><mark>Turkish Vowels – Reading</mark></b> to learn the vowels in this lesson</h4>
 				  </div>			  
 			  
 			  </div>			 			  
