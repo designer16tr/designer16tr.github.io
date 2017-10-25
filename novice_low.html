@@ -18,87 +18,10 @@
                 padding-bottom: 20px;
             }
         </style>
-		
-        <style>
-			 /* The Modal (background) */
-			.modal {
-				display: none; /* Hidden by default */
-				position: fixed; /* Stay in place */
-				z-index: 1; /* Sit on top */
-				left: 0;
-				top: 50px;
-				width: 100%; /* Full width */
-				height: 100%; /* Full height */
-				overflow: auto; /* Enable scroll if needed */
-				background-color: rgb(0,0,0); /* Fallback color */
-				background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-			}
-			
-			/* Modal Header */
-			.modal-header {
-				padding: 2px 16px;
-				background-color: #5cb85c;
-				color: white;
-			}
-
-			/* Modal Body */
-			.modal-body {padding: 2px 16px;}
-
-			/* Modal Footer */
-			.modal-footer {
-				padding: 2px 16px;
-				background-color: #5cb85c;
-				color: white;
-			}			
-
-			/* Modal Content */
-			.modal-content {
-				position: relative;
-				background-color: #fefefe;
-				margin: auto;
-				padding: 0;
-				border: 1px solid #888;
-				width: 80%;
-				box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-				-webkit-animation-name: animatetop;
-				-webkit-animation-duration: 0.4s;
-				animation-name: animatetop;
-				animation-duration: 0.4s
-			}
-
-			/* The Close Button */
-			.close {
-				color: #000;
-				float: right;
-				font-size: 50px;
-				font-weight: bold;
-			}
-
-			.close:hover,
-			.close:focus {
-				color: black;
-				text-decoration: none;
-				cursor: pointer;
-			} 
-			
-			/* Add Animation */
-			@-webkit-keyframes animatetop {
-				from {top: -300px; opacity: 0}
-				to {top: 0; opacity: 1}
-			}
-
-			@keyframes animatetop {
-				from {top: -300px; opacity: 0}
-				to {top: 0; opacity: 1}
-			}			
-        </style>		
-		
-		
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-		
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -136,48 +59,16 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Welcome to Learning Turkish Your Way!</h1>
-        <!-- <p>This is a Bootstrap template from http://www.initializr.com/ </p>
-		
-         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
-      </div>
     </div>
 
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-4">
           <h2>Novice Low</h2>
-			 <!-- Trigger/Open The Modal -->
-			<button id="myBtn" class="btn btn-default">Open Link 1</button>
-
-			<!-- The Modal -->
-			<div id="myModal" class="modal">
-
-			  <!-- Modal content -->
-			  <div class="modal-content">
-
-				  <div class="modal-header">
-					<span class="close">&times;</span>
-					<h2>Mini Lesson: <mark>Turkish Vowels</mark></h2>
-				  </div>
-				  <div class="modal-body">
-					<p>Some other text... </br></p>
-					<p>Some other text... </br></p>
-					<p>Some other text... </br></p>
-					<p>Some other text... </br></p>		
-					<p>Some other text... </br></p>
-					<p>Some other text... </br></p>
-					<p>Some other text... </br></p>
-					<p>Some other text... </br></p>					
-				  </div>
-				  <div class="modal-footer">
-					<h3>Also try this: ...</h3>
-				  </div>			  
-			  
-			  </div>
-
-			</div> 
-        </div>	
+          <p class="bg-warning"> This is the starting level recommended for every beginner. Here you will learn the alphabet, counting from 0 to 20, and some simple words.  </p>
+          <p><a class="btn btn-default" href="https://designer16tr.github.io/novice_low_a1.html" role="button">Turkish Vowels &raquo;</a></p>
+        </div>		
       </div>
 
       <hr>
@@ -201,34 +92,5 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
-		
-		<script type='text/javascript'>
-			// Get the modal
-			var modal = document.getElementById('myModal');
-
-			// Get the button that opens the modal
-			var btn = document.getElementById("myBtn");
-
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-
-			// When the user clicks on the button, open the modal
-			btn.onclick = function() {
-				modal.style.display = "block";
-			}
-
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() {
-				modal.style.display = "none";
-			}
-
-			// When the user clicks anywhere outside of the modal, close it
-			window.onclick = function(event) {
-				if (event.target == modal) {
-					modal.style.display = "none";
-				}
-			} 		
-		</script>
-		
     </body>
 </html>
