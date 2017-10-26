@@ -37,14 +37,29 @@
 			/* Modal Header */
 			.modal-header-reading {
 				padding: 2px 16px;
-				background-color: #acb85c;
+				background-color: #2E6BA1;
 				color: white;
 			}
-			.modal-header {
+			.modal-header-listening {
 				padding: 2px 16px;
-				background-color: #5cb85c;
+				background-color: #479E45;
 				color: white;
 			}
+			.modal-header-writing {
+				padding: 2px 16px;
+				background-color: #43AECF;
+				color: white;
+			}
+			.modal-header-speaking {
+				padding: 2px 16px;
+				background-color: #F59B3A;
+				color: white;
+			}
+			.modal-header-feedback {
+				padding: 2px 16px;
+				background-color: #F2F2F7;
+				color: white;
+			}			
 			
 			/* Modal Body */
 			.modal-body {padding: 2px 16px;}
@@ -72,7 +87,10 @@
 			}
 
 			/* The Close Button */
-			.close01, .close02 {
+			.close01, 
+			.close02, 
+			.close03,
+			.close04 {
 				color: #000;
 				float: right;
 				font-size: 50px;
@@ -81,8 +99,12 @@
 
 			.close01:hover, 
 			.close02:hover,
+			.close03:hover,
+			.close04:hover,			
 			.close01:focus, 
-			.close02:focus {
+			.close02:focus,
+			.close03:focus,
+			.close04:focus {
 				color: black;
 				text-decoration: none;
 				cursor: pointer;
@@ -171,19 +193,19 @@
 			 <!-- Trigger/Open The Modal -->
 			 <div class="pad05 bg-info">
 				<h4>Front Vowels: E, e , İ, i , Ö, ö , Ü, ü Back Vowels: A, a , I, ı , O, o , U, u</h4>
-				<button id="myBtn01" class="btn btn-danger">__Turkish Vowels - Reading__</button>
-				<button id="myBtn02" class="btn btn-danger">__Turkish Vowels - Listening__</button>
+				<button id="myBtn01" class="btn btn-primary">__Turkish Vowels - Reading__</button>
+				<button id="myBtn02" class="btn btn-success">__Turkish Vowels - Listening__</button>
 				<button id="myBtn03" class="btn btn-info">__Turkish Vowels - Writing__</button>
 				<button id="myBtn04" class="btn btn-warning">__Turkish Vowels - Speaking__</button>
 				<button id="myBtn05" class="btn btn-default">__Turkish Vowels - Feedback__</button>
 			</div>
 			
 			 <div class="pad05 bg-warning">
-				<button id="myBtn01" class="btn btn-primary">Turkish Consonants - Reading</button>
-				<button id="myBtn02" class="btn btn-success">Turkish Consonants - Listening</button>
-				<button id="myBtn03" class="btn btn-info">Turkish Consonants - Writing</button>
-				<button id="myBtn04" class="btn btn-warning">Turkish Consonants - Speaking</button>
-				<button id="myBtn05" class="btn btn-default">Turkish Consonants - Feedback</button>
+				<button id="myBtn06" class="btn btn-primary">Turkish Consonants - Reading</button>
+				<button id="myBtn07" class="btn btn-success">Turkish Consonants - Listening</button>
+				<button id="myBtn08" class="btn btn-info">Turkish Consonants - Writing</button>
+				<button id="myBtn09" class="btn btn-warning">Turkish Consonants - Speaking</button>
+				<button id="myBtn10" class="btn btn-default">Turkish Consonants - Feedback</button>
 			</div>			
 			<!-- Turkish Vowels - Reading -->
 			<div id="myModal_1" class="modal">
@@ -224,15 +246,13 @@
 
 			  <div class="modal-content">
 
-				  <div class="modal-header">
+				  <div class="modal-header-listening">
 					<span class="close02">&times;</span>
 					<h2>Mini Lesson: <mark>Turkish Vowels</mark> - Listening </h2>
 				  </div>
 				  <div class="modal-body">
 					<h3>Click on the link to listen to the mini lesson on Turkish Vowels</br></h3>
-
-					<h3><a href="https://s3.amazonaws.com/aatay3b01/temp/vowels.wma">Listen to Turkish Vowels sound track</a></h3>
-				
+					<h3><a href="https://s3.amazonaws.com/aatay3b01/temp/vowels.wma">Listen to Turkish Vowels sound track</a></h3>				
 				  </div>
 				  <div class="modal-footer">
 					<h4>See mini lesson <b><span class="col-red bg-col-yellow">Turkish Vowels – Reading</span></b> to learn the vowels in this lesson</h4>
@@ -241,6 +261,59 @@
 			  </div>			 			  
 			  
 			</div>	
+			
+			<!-- Turkish Vowels - Writing -->
+			<div id="myModal_3" class="modal">
+			  <div class="modal-content">
+
+				  <div class="modal-header-writing">
+					<span class="close03">&times;</span>
+					<h2>Mini Lesson: <mark>Turkish Vowels</mark> - Writing </h2>
+				  </div>
+				  <div class="modal-body">
+					<h3>Take a piece of paper and a pencil and write these letters</h3>
+					<h3> Front Vowels: <span class="bg-col-yellow">E, e</span> , <span class="bg-col-yellow">İ, i</span> , <span class="bg-col-yellow">Ö, ö</span> , <span class="bg-col-yellow">Ü, ü</span></br> 
+						Back Vowels: <span class="bg-col-yellow">A, a</span> , <span class="bg-col-yellow">I, ı</span> , <span class="bg-col-yellow">O, o</span> , <span class="bg-col-yellow">U, u</span> </h3>
+				  </div>
+				  <div class="modal-footer">
+					<h4>See mini lesson <b><span class="col-red bg-col-yellow">Turkish Vowels – Reading</span></b> to learn the vowels in this lesson</h4>
+				  </div>			  
+			  
+			  </div>			 			  			  
+			</div>				
+			<!-- End Turkish Vowels - Writing -->
+			
+			<!-- Turkish Vowels - Speaking -->
+			<div id="myModal_4" class="modal">
+			  <div class="modal-content">
+
+				  <div class="modal-header-speaking">
+					<span class="close04">&times;</span>
+					<h2>Mini Lesson: <mark>Turkish Vowels</mark> - Writing </h2>
+				  </div>
+				  <div class="modal-body">
+					<h3>First try to guess how these words are pronounced, then click on the link at the bottom and listen. How close were you?</h3>
+					<h3> 
+						<span class="bg-col-yellow">E, e</span> – Ege, Ben, Ek</br>
+						<span class="bg-col-yellow">İ, &nbsp;i&nbsp;</span> – İki, Bir, Ki, İp</br>
+						<span class="bg-col-yellow">Ö, ö</span> – Ön, Gön</br>
+						<span class="bg-col-yellow">Ü, ü</span> – Ün, Gün</br> 
+						<span class="bg-col-yellow">A, a</span> – Aha, Ak, Eki</br>
+						<span class="bg-col-yellow">I, &nbsp;ı&nbsp;</span> – Sık, Mı</br>
+						<span class="bg-col-yellow">O, o</span> – Onu, Bol</br> 
+						<span class="bg-col-yellow">U, u</span> – Kum, Un, Bu 
+					</h3>
+					</br>
+					<h3><a href="https://s3.amazonaws.com/aatay3b01/temp/Vowels_Speaking_Exercise.wma">Listen to Turkish Vowels pronunciations sound track</a></h3>
+				  </div>
+				  
+				  <div class="modal-footer">
+					<h4>See mini lesson <b><span class="col-red bg-col-yellow">Turkish Vowels – Reading</span></b> to learn the vowels in this lesson</h4>
+				  </div>			  
+			  
+			  </div>			 			  			  
+			</div>				
+			<!-- End Turkish Vowels - Speaking -->			
 			
 			</div> 
         </div>	
@@ -251,7 +324,8 @@
       <footer>
         <p>&copy; Aydin Atay 2017</p>
       </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </div> <!-- /container -->        
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
@@ -272,15 +346,21 @@
 			// Get the modal
 			var modal_1 = document.getElementById('myModal_1');
 			var modal_2 = document.getElementById('myModal_2');
+			var modal_3 = document.getElementById('myModal_3');			
+			var modal_4 = document.getElementById('myModal_4');	
 			
 			// Get the button that opens the modal
 			var btn01 = document.getElementById("myBtn01");
-			var btn02 = document.getElementById("myBtn02");			
-
+			var btn02 = document.getElementById("myBtn02");	
+			var btn03 = document.getElementById("myBtn03");
+			var btn04 = document.getElementById("myBtn04");
+			
 			// Get the <span> element that closes the modal
 			var span01 = document.getElementsByClassName("close01")[0];
 			var span02 = document.getElementsByClassName("close02")[0];
-
+			var span03 = document.getElementsByClassName("close03")[0];			
+			var span04 = document.getElementsByClassName("close04")[0];	
+			
 			// When the user clicks on the button, open the modal
 			btn01.onclick = function() {
 				modal_1.style.display = "block";
@@ -288,6 +368,12 @@
 			btn02.onclick = function() {
 				modal_2.style.display = "block";
 			}
+			btn03.onclick = function() {
+				modal_3.style.display = "block";
+			}	
+			btn04.onclick = function() {
+				modal_4.style.display = "block";
+			}			
 			
 			// When the user clicks on <span> (x), close the modal
 			span01.onclick = function() {
@@ -296,6 +382,12 @@
 			span02.onclick = function() {
 				modal_2.style.display = "none";
 			}
+			span03.onclick = function() {
+				modal_3.style.display = "none";
+			}
+			span04.onclick = function() {
+				modal_4.style.display = "none";
+			}			
 			
 			// When the user clicks anywhere outside of the modal, close it
 			window.onclick = function(event) {
@@ -304,6 +396,12 @@
 				}
 				else if (event.target == modal_2) {
 					modal_2.style.display = "none";
+				}
+				else if (event.target == modal_3) {
+					modal_3.style.display = "none";
+				}
+				else if (event.target == modal_4) {
+					modal_4.style.display = "none";
 				}				
 			} 		
 		</script>
