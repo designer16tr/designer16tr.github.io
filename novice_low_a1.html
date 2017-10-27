@@ -59,7 +59,12 @@
 				padding: 2px 16px;
 				background-color: #F2F2F7;
 				color: white;
-			}			
+			}
+			.modal-header-intro {
+				padding: 2px 16px;
+				background-color: #F20000;
+				color: white;
+			}
 			
 			/* Modal Body */
 			.modal-body {padding: 2px 16px;}
@@ -87,6 +92,7 @@
 			}
 
 			/* The Close Button */
+			.close00,
 			.close01, 
 			.close02, 
 			.close03,
@@ -97,10 +103,12 @@
 				font-weight: bold;
 			}
 
+			.close00:hover,
 			.close01:hover, 
 			.close02:hover,
 			.close03:hover,
-			.close04:hover,			
+			.close04:hover,	
+			.close00:focus,			
 			.close01:focus, 
 			.close02:focus,
 			.close03:focus,
@@ -159,7 +167,9 @@
 		  <!-- Project Name -->
           <a class="navbar-brand" href="#"> < Learner Driven Focused Turkish Language Mini Lessons > <mark>Turkish Vowels</mark></a>
         </div>
-		<div class="navbar-right"><a href="https://designer16tr.github.io/"><img src="https://designer16tr.github.io/img/index.png" height="48" width="48"/></a></div>
+		<div class="navbar-right">
+			<a href="https://designer16tr.github.io/"><img src="https://designer16tr.github.io/img/index.png" height="48" width="48"/></a>
+		</div>
         <div id="navbar" class="navbar-collapse collapse">
 		<!--
           <form class="navbar-form navbar-right" role="form">
@@ -180,16 +190,65 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Welcome to Learning Turkish Your Way!</h1>
-        <!-- <p>This is a Bootstrap template from http://www.initializr.com/ </p>
+        <!-- <p>This is a Bootstrap template from http://www.initializr.com/ </p> -->
 		
-         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
-      </div>
+      </div>	  
     </div>
-
+         
     <div class="container">
       <!-- Example row of columns -->
+	  <p><a id="myBtn00" class="btn btn-danger btn-lg" href="#" role="button">&raquo; A quick introduction to Turkish language with examples &laquo;</a></p>
       <div class="row">
         <div class="col-md-12">
+		
+			<!-- Introduction -->
+			<div id="myModal_0" class="modal">
+			  <div class="modal-content">
+
+				  <div class="modal-header-intro">
+					<span class="close00">&times;</span>
+					<h2>Mini Lesson: <mark>Introduction</mark> to Turkish Language </h2>
+					<a href="#"><img src="https://designer16tr.github.io/img/flag_turkey.png" height="48" width="48"/></a>
+				  </div>
+				  <div class="modal-body">
+					<h3>Turkish is a language that is spoken by over 90 million people around the world of
+						 which 80 million live in main land Turkey. The capital of Turkey is Ankara, the political regime 
+						is democracy, and the lands of Turkey are almost as large as those of Texas. Now let's learn a few 
+						basic words and phrases in Turkish!</br>
+					</h3>
+					<h4>
+						</br><div class="bg-col-beige">
+						* When you meet a person in Turkey you say <b><span class="col-red bg-col-yellow">Merhaba!</span></b> which means "Hello!" To return
+						the greeting the other person also says "Merhaba!". You also say <b><span class="col-red bg-col-yellow">Merhaba, nasılsın?</span></b> 
+						which means "Hello, how are you?"  To say "I am fine, thank you!" you say <b><span class="col-red bg-col-yellow">Teşekkür ederim, iyiyim!</span></b></br>
+						</br>
+						* To introduce yourself you say <b><span class="col-red bg-col-yellow">Benim adım ...</span></b> which means "My name is ...". 
+						To ask the other person's name you say <b><span class="col-red bg-col-yellow">"Adınız ne?</span></b> which is a question
+						that means "What is your name?"</div></br>
+						</br>
+						Now click this link to listen to the text above.</br></br>
+						<a href="https://s3.amazonaws.com/aatay3b01/temp/intro.wma">Intro to Turkish Language</a>
+						</br></br>
+						As you can see Turkish is quite different compared to languages like English, German, or Spanish. I am sure you noticed
+						that you needed only 3 words to say "I am fine, thank you!" which is 5 words! It is because Turkish belongs to a group of
+						languages that are called "agglutinative" in the sense that most words are made by multiple other words "glued" together.
+						For example "iyiyim" means "I am fine", "iyisin" means "you are fine" and so on.</br>
+						</br>
+					<h3>
+						Sounds interesting? Let's dive in! I recommend that you start with vowels, consonants and such, but you are completely
+						free to start from any mini lesson you like!
+					</h3>
+					</h4>
+
+				  </div>
+				  <div class="modal-footer">
+					<h4>See mini lesson <b><span class="col-red bg-col-yellow">Turkish Vowels – Reading</span></b> to start learn Turkish.</h4>
+				  </div>			  
+			  
+			  </div>			 			  			  
+			</div>				
+			<!-- End Introduction -->		
+		
           <h2>Novice Low</h2>
 			 <!-- Trigger/Open The Modal -->
 			 <div class="pad05 bg-info">
@@ -345,24 +404,30 @@
 		
 		<script type='text/javascript'>
 			// Get the modal
+			var modal_0 = document.getElementById('myModal_0');			
 			var modal_1 = document.getElementById('myModal_1');
 			var modal_2 = document.getElementById('myModal_2');
 			var modal_3 = document.getElementById('myModal_3');			
 			var modal_4 = document.getElementById('myModal_4');	
 			
 			// Get the button that opens the modal
+			var btn00 = document.getElementById("myBtn00");			
 			var btn01 = document.getElementById("myBtn01");
 			var btn02 = document.getElementById("myBtn02");	
 			var btn03 = document.getElementById("myBtn03");
 			var btn04 = document.getElementById("myBtn04");
 			
 			// Get the <span> element that closes the modal
+			var span00 = document.getElementsByClassName("close00")[0];			
 			var span01 = document.getElementsByClassName("close01")[0];
 			var span02 = document.getElementsByClassName("close02")[0];
 			var span03 = document.getElementsByClassName("close03")[0];			
 			var span04 = document.getElementsByClassName("close04")[0];	
 			
 			// When the user clicks on the button, open the modal
+			btn00.onclick = function() {
+				modal_0.style.display = "block";
+			}			
 			btn01.onclick = function() {
 				modal_1.style.display = "block";
 			}
@@ -374,9 +439,13 @@
 			}	
 			btn04.onclick = function() {
 				modal_4.style.display = "block";
-			}			
+			}	
+			
 			
 			// When the user clicks on <span> (x), close the modal
+			span00.onclick = function() {
+				modal_0.style.display = "none";
+			}
 			span01.onclick = function() {
 				modal_1.style.display = "none";
 			}
@@ -392,9 +461,12 @@
 			
 			// When the user clicks anywhere outside of the modal, close it
 			window.onclick = function(event) {
-				if (event.target == modal_1) {
-					modal_1.style.display = "none";
+				if (event.target == modal_0) {
+					modal_0.style.display = "none";
 				}
+				else if (event.target == modal_1) {
+					modal_1.style.display = "none";
+				}				
 				else if (event.target == modal_2) {
 					modal_2.style.display = "none";
 				}
