@@ -90,7 +90,8 @@
 			.close01, 
 			.close02, 
 			.close03,
-			.close04 {
+			.close04,
+			.close05 {
 				color: #000;
 				float: right;
 				font-size: 50px;
@@ -100,11 +101,13 @@
 			.close01:hover, 
 			.close02:hover,
 			.close03:hover,
-			.close04:hover,			
+			.close04:hover,		
+			.close05:hover,				
 			.close01:focus, 
 			.close02:focus,
 			.close03:focus,
-			.close04:focus {
+			.close04:focus,			
+			.close05:focus {
 				color: black;
 				text-decoration: none;
 				cursor: pointer;
@@ -314,16 +317,36 @@
 				  
 				  <div class="modal-footer">
 					<h4>See mini lesson <b><span class="col-red bg-col-yellow">Turkish Vowels – Reading</span></b> to learn the vowels in this lesson</h4>
-				  </div>			  
-<form action="https://formspree.io/designer16tr@yahoo.com"
-      method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
-</form> 
+				  </div>
+				 
 			  </div>			 			  			  
 			</div>				
 			<!-- End Turkish Vowels - Speaking -->			
+
+			<div id="myModal_5" class="modal">
+			  <div class="modal-content">
+
+				  <div class="modal-header-speaking">
+					<span class="close05">&times;</span>
+					<h2>Mini Lesson: <mark>Passive Voice</mark> - Feedback </h2>
+				  </div>
+				  <div class="modal-body">
+					<h4>
+						<form action="https://formspree.io/designer16tr@yahoo.com" method="POST">
+							  <input name="email" placeholder="Your email" type="email" style="width:300px;"><br>
+							  <textarea name="message" placeholder="Your message" style="width:300px;"></textarea>
+							  <button type="submit">Send</button>
+						</form>
+					</h4>
+				  </div>
+				  
+				  <div class="modal-footer">
+					<h4><b><span class="col-red bg-col-yellow">Thank You</span></b> for sending feedback!</h4>
+				  </div>
+				  
+ 
+			  </div>			 			  			  
+			</div>	
 			
 			</div> 
         </div>	
@@ -357,18 +380,21 @@
 			var modal_2 = document.getElementById('myModal_2');
 			var modal_3 = document.getElementById('myModal_3');			
 			var modal_4 = document.getElementById('myModal_4');	
+			var modal_5 = document.getElementById('myModal_5');				
 			
 			// Get the button that opens the modal
 			var btn01 = document.getElementById("myBtn01");
 			var btn02 = document.getElementById("myBtn02");	
 			var btn03 = document.getElementById("myBtn03");
 			var btn04 = document.getElementById("myBtn04");
+			var btn05 = document.getElementById("myBtn05");			
 			
 			// Get the <span> element that closes the modal
 			var span01 = document.getElementsByClassName("close01")[0];
 			var span02 = document.getElementsByClassName("close02")[0];
 			var span03 = document.getElementsByClassName("close03")[0];			
 			var span04 = document.getElementsByClassName("close04")[0];	
+			var span05 = document.getElementsByClassName("close05")[0];			
 			
 			// When the user clicks on the button, open the modal	
 			btn01.onclick = function() {
@@ -383,7 +409,9 @@
 			btn04.onclick = function() {
 				modal_4.style.display = "block";
 			}	
-			
+			btn05.onclick = function() {
+				modal_5.style.display = "block";
+			}			
 			
 			// When the user clicks on <span> (x), close the modal
 			span01.onclick = function() {
@@ -398,6 +426,9 @@
 			span04.onclick = function() {
 				modal_4.style.display = "none";
 			}			
+			span05.onclick = function() {
+				modal_5.style.display = "none";
+			}
 			
 			// When the user clicks anywhere outside of the modal, close it
 			window.onclick = function(event) {
@@ -412,6 +443,9 @@
 				}
 				else if (event.target == modal_4) {
 					modal_4.style.display = "none";
+				}	
+				else if (event.target == modal_5) {
+					modal_5.style.display = "none";
 				}				
 			} 		
 		</script>
